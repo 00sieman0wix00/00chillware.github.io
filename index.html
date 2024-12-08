@@ -1,233 +1,61 @@
-<!DOCTYPE html><html lang="pl" class="h-100"><head>
-		<!-- acmc.pl © 2024 | Wszelkie prawa zastrzeżone. -->
-
-		<!-- Start: Meta -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Strona glówna - AcMC.pl</title>
-		<meta name="description" content="Dołącz do naszego serwera Minecraft już dziś i stań się częścią dynamicznie rozwijającej się społeczności graczy! Oferujemy szeroki wybór trybów gry, takich jak Survival, Bed Wars, Gildie, One Block i wiele innych. Nasz serwer to idealne miejsce dla każdego, kto szuka niezapomnianych wrażeń i przygód w świecie Minecrafta.">
-		<meta name="keywords" content="serwer, minecraft, sieć serwerow, boxpvp, anarchia, gildie, oneblock">
-
-		<meta name="_csrf" content="">
-		<meta name="_csrf_header" content="">
-		<meta name="google-site-verification" content="_7FjluSqjb4KAF9ybxiQ9JlT2KEdbJ0u8AjZ4dO8Imw">
-		<meta property="og:type" content="website">
-		
-		
-			<meta property="og:image" content="images/icon.png">
-			<meta name="twitter:image" content="/images/icon.png">
-		
-		<meta property="og:description" content="Dołącz do naszego serwera Minecraft już dziś i stań się częścią dynamicznie rozwijającej się społeczności graczy! Oferujemy szeroki wybór trybów gry, takich jak Survival, Bed Wars, Gildie, One Block i wiele innych. Nasz serwer to idealne miejsce dla każdego, kto szuka niezapomnianych wrażeń i przygód w świecie Minecrafta.">
-		<meta property="og:title" content="AcMC.pl - Najlepsza sieć serwerów Minecraft.">
-		<meta name="twitter:title" content="AcMC.pl - Najlepsza sieć serwerów Minecraft.">
-		<meta name="theme-color" content="#9366d4">
-    <script type="application/ld+json">
-    {
-      "@context" : "https://schema.org",
-      "@type" : "WebSite",
-      "name" : "AcMC.pl",
-      "url" : "https://acmc.pl/"
-    }
-	  </script>
-		<!-- Koniec: Meta -->
-
-		<!-- Start: Linki -->
-		
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		
-		
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/codemirror.css">
-		<link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
-		<link rel="stylesheet" href="css/jquery-ui.css">
-		<style type="text/css">@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(fonts/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(fonts/normal_1.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(fonts/normal_2.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(fonts/normal_3.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(fonts/normal_5.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(fonts/normal_4.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:300;src:url(fonts/normal_8.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(fonts/normal_6.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(fonts/normal_7.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(fonts/normal_11.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(fonts/normal_14.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(fonts/normal_10.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(fonts/normal_9.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(fonts/normal_12.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(fonts/normal_13.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(fonts/normal_15.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(fonts/normal_27.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(fonts/normal_18.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(fonts/normal_16.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(fonts/normal_17.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:500;src:url(fonts/normal_20.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(fonts/normal_23.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(fonts/normal_21.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(fonts/normal_19.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(fonts/normal_22.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(fonts/normal_25.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(fonts/normal_24.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:700;src:url(fonts/normal_26.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
-		<link rel="stylesheet" href="css/scalable.css">
-		<link rel="stylesheet" href="css/newstyle.css">
-		<link rel="stylesheet" type="text/css" href="css/snow.css">
-		
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png">
-		<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
-		<link rel="apple-touch-icon" type="image/png" sizes="167x167" href="images/favicon-167x167.png">
-		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="images/favicon-180x180.png">
-		
-
-		<!-- Koniec: Linki -->
-		<!-- Start: Skrypty -->
-		<!-- acmc.pl © 2024 | Wszelkie prawa zastrzeżone. -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.bootstrap-growl.min.js"></script>
-		<script src="js/jquery.dataTables.min.js"></script>
-		<script src="js/dataTables.bootstrap4.min.js"></script>
-		<script src="js/api.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
-		<!-- Koniec: Skrypty -->
-		
-	</head>
-	<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" class="d-flex flex-column h-100">
-	    <!-- poczatek wczytywania -->
-		<div class="wczytywanie">
-			<div class="wczytywanie-ramka">
-				<div class="punkt"></div>
-				<div class="punkt"></div>
-				<div class="punkt"></div>
-				<div class="punkt"></div>
-			</div>
-		</div>
-		<!-- koniec wczytywania -->
-		
-		
-		<!-- poczatek wczytywania -->
-		<div class="wczytywanie2">
-			<div class="wczytywanie-ramka2">
-				<div class="punkt2"></div>
-				<div class="punkt2"></div>
-				<div class="punkt2"></div>
-				<div class="punkt2"></div>
-			</div>
-		</div>
-		<!-- koniec wczytywania -->
-		<!-- acmc.pl © 2024 | Wszelkie prawa zastrzeżone. -->
-
-		<script>
-			var wczytywanie = document.getElementsByClassName('wczytywanie')[0];
-
-			wczytywanie.classList.add('wczytywanie-pokaz');
-			window.addEventListener('load', function() {
-				setTimeout(function() {
-					wczytywanie.classList.remove('wczytywanie-pokaz');
-				}, 500);
-			});
-
-			function newwin(arg, open) {
-
-				var wczytywanie = document.getElementsByClassName('wczytywanie2')[0];
-
-				wczytywanie.classList.add('wczytywanie-pokaz2');
-				setTimeout(function() {
-					if (open == "true") {
-						window.open(arg, "_self");
-					} else {
-						window.open(arg);
-					}
-				}, 205);
-			}
-
-		</script>
-
-		<header>
-			<canvas id="canvas"></canvas>
-			<div class="slider-test">
-				<nav class="top-bar-test">
-					<div class="top-bar-right-test">
-						<ul class="menu-test">
-							<li><a onclick="newwin(" p10",="" "true")"=""><i class="fas fa-home" aria-hidden="true"></i>Strona główna</a></li>
-							<li><a onclick="newwin(" promotion="" ",="" "true")"=""><i class="fas fa-tags" aria-hidden="true"></i>Vouchery</a></li>
-							<li><a onclick="newwin(" offer",="" "true")"="" class="rainbow"><i class="fas fa-dollar-sign" aria-hidden="true"></i><b>Sklep</b><br></a></li>
-							
-							<li><a onclick="newwin(" p1",="" "true")"=""><i class="fas fa-folder-open" aria-hidden="true"></i>Regulaminy</a></li>
-							
-							
-							
-							<li><a onclick="newwin(" reward",="" "true")"=""><i class="fas fa-check" aria-hidden="true"></i>Darmowy portfel</a></li>
-						</ul>
-					</div>
-				</nav>
-				<div class="vertical-center" id="tochange">
-					
-					<img alt="ACMC.PL" src="images/lZTArJc.png">
-					<!-- <img alt="ACMC.PL" src="https://i.imgur.com/gSM7NWY.png"> -->
-					<!-- <img alt="ACMC.PL" src="https://i.imgur.com/w7EFjLY.png"> -->
-					
-					
-					
-				</div>
-			</div>
-		</header>
-		
-					
-
-
-<div id="notifications" class="basic-notification" style="min-height: 0px;">
-	
-</div>
-					
-
-
-
-
-
-
-    <section>
-        <div class="box-test" style="position: absolute; top: 92%;">
-            <a href="#" class="box-xd-test" style="width: 33.33333%">
-                <div class="article-test" style="background-image: url('images/25FlanO.jpg')">
-                    <div class="article-text-test">
-                        <p>Kliknij, aby przeczytać artykuł!</p>
-                        <h2>Coraz wiecej graczy!</h2>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="box-xd-test" style="width: 33.33333%">
-                <div class="article-test" style="background-image: url('images/T6B3Eot.jpg')">
-                    <div class="article-text-test">
-                        <p>Kliknij, aby przeczytać artykuł!</p>
-                        <h2>Nowości na serwerze!</h2>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/reward" class="box-xd-test" style="width: 33.33333%">
-                <div class="article-test" style="background-image: url('images/TFhKBE9.png')">
-                    <div class="article-text-test">
-                        <p>Kliknij, aby przeczytać artykuł!</p>
-                        <h2>Skad zdobyć free portfel?</h2>
-                    </div>
-                </div>
-            </a>
-
-
-            <footer style="margin-top: 25px;">
-                <div class="info">
-                    <ul class="footer-test">
-                        <li id="rest"></li>
-                        <li><a href="http://dc.acmc.pl" target="blank"><i class="fab fa-discord" aria-hidden="true"></i>Discord</a></li>
-                        <li><a href="http://fb.acmc.pl" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
-                        <li><a href="https://www.tiktok.com/@acmc.pl" target="blank"><i class="fas fa-music" aria-hidden="true"></i>TikTok</a></li>
-                    </ul>
-                </div>
-                It is NOT Mojang, NOT associated with Mojang and NOT supported by Mojang. The service is in no way affiliated with Mojang, AB. Nor should it be considered a company endorsed by Mojang, AB. ACMC.PL © 2020 | Wszelkie prawa zastrzeżone.
-            </footer>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MagmaDevs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #003d82;
+        }
+        .executor-details {
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        .executor-icon {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MagmaDevs</h1>
+    <div class="container">
+        <div class="executor-details">
+            <h2>ChillWare Executor</h2>
+            <img src="chillware.png" alt="ChillWare Icon" class="executor-icon">
+            <p>A new Executor Roblox with 0% Virus (check VirusTotal for proof)</p>
         </div>
-    </section>
-    <script>
-        document.getElementById("tochange").classList.remove('vertical-center-two');
-        document.getElementById("tochange").classList.add('vertical-center');
-    </script>
-					
-		<!-- Start: Skrypty
-		<!-- acmc.pl © 2024 | Wszelkie prawa zastrzeżone. -->
-		<script>
-			function copyToClipboard(element) {
-				var $temp = $("<input>");
-				$("body").append($temp);
-				$temp.val($(element).text()).select();
-				document.execCommand("copy");
-				$temp.remove();
-			}
-		</script>
-		<script>
-			$(function () {
-				$('[data-toggle="tooltip"]').tooltip();
-				$('[data-toggle="popover"]').popover({ html : true });
-			})
-		</script>
-		<script src="js/status.js"></script>
-
-		<!-- acmc.pl © 2024 | Wszelkie prawa zastrzeżone. -->
-	
-
-</body></html>
+        <a class="button" href="https://discord.gg/BU4eSgmd" target="_blank">Discord</a>
+    </div>
+</body>
+</html>
